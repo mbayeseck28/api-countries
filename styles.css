@@ -1,0 +1,48 @@
+.myFlex{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.drapeau img{
+    width: 100%;
+    height: 125px;
+}
+/* Dark Mode */
+
+:root{
+   --white:#fff;
+   --black:#444;
+}
+
+*{
+   transition: .2s linear;
+}
+
+body.dark{
+   --white:#212529;
+   --black:#F8F9FA;
+}
+
+.changeBg{
+   background-color: var(--white);
+}
+
+h5, h6, .changeText, ::placeholder{
+   color:var(--black);
+}
+
+#toggle-btn{
+   height: 40px;
+   width: 40px;
+   line-height: 40px;
+   border-radius: 50%;
+   background-color: var(--black);
+   color:var(--white);
+   font-size: 30px;
+   cursor: pointer;
+   text-align: center;
+}
+
+#toggle-btn.fa-moon{
+   transform: rotate(360deg);
+}
