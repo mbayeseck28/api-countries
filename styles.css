@@ -5,7 +5,10 @@
 }
 .drapeau img{
     width: 100%;
-    height: 125px;
+    height: 150px;
+}
+.drapeauDet img{
+    width: 100%;
 }
 /* Dark Mode */
 
@@ -45,4 +48,8 @@ h5, h6, .changeText, ::placeholder{
 
 #toggle-btn.fa-moon{
    transform: rotate(360deg);
+}
+
+h6{
+   font-size: small;
 }
