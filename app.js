@@ -71,54 +71,6 @@ function paysParContinent() {
 afficherTousLesPays(); // Appelez la fonction pour afficher tous les pays
 paysParContinent();
 
-// function fetchPays(api) {
-//   fetch(api)
-//     .then((response) => response.json())
-//     .then((data) => {
-//       // console.log(data);
-//       carte.innerHTML = '';
-//       data.forEach((pays) => {
-//         allPays.push(pays);
-//         const contain = document.createElement('div');
-//         contain.classList.add('col-sm-6');
-//         contain.classList.add('col-md-4');
-//         contain.classList.add('col-lg-3');
-//         contain.classList.add('mb-3');
-//         contain.id = 'paysId';
-//         contain.innerHTML = `
-//             <div class="card changeBg shadow" >
-//               <button type="button" class="btn m-0 p-0 text-start" onclick="details(${pays.population})">
-//                 <div class="drapeau">
-//                   <img src="${pays.flags.png}" alt="">
-//                 </div>
-//                 <div class="card-body py-4">
-//                     <span>
-//                         <h5><span class="fw-semibold">${pays.name.common}</span></h5>
-//                     </span>
-//                     <span>
-//                         <h6>Population: <span class="fw-light">${pays.population}</span></h6>
-//                     </span>
-//                     <span>
-//                         <h6>Région: <span class="fw-light">${pays.continents}</span></h6>
-//                     </span>
-//                     <span>
-//                         <h6>Capital: <span class="fw-light">${pays.capital}</span></h6>
-//                     </span>
-//                 </div>
-//               </button>
-//               </div>
-//             `;
-//         carte.appendChild(contain);
-//       });
-//     })
-//     .catch((error) => {
-//       console.error(
-//         "Une erreur s'est produite lors de la récupération des données de l'API.",
-//         error
-//       );
-//     });
-// }
-// fetchPays('https://restcountries.com/v3.1/all');
 function details(cle) {
   const cleRecherche = 'population';
   const valeurRecherche = cle;
@@ -176,27 +128,6 @@ function details(cle) {
 function retour() {
   window.location.href = 'index.html';
 }
-
-// Recherche pays ou continent
-// let form = document.querySelector('form');
-// let input = document.querySelector('input');
-// let select = document.querySelector('select');
-// select.addEventListener('input', (e) => {
-//   let inputValue = e.target.value;
-//   console.log(inputValue);
-//   fetchPays(`https://restcountries.com/v3.1/region/${inputValue}`);
-//   //   fetchPays(`https://restcountries.com/v3.1/name/${inputValue}`);
-// });
-// input.addEventListener('input', (e) => {
-//   let inputValue = e.target.value;
-//   console.log(inputValue);
-//   const cleRecherche = 'name';
-//   const valeurRecherche = inputValue;
-//   const objetTrouve = allPays.find(
-//     (objet) => objet[cleRecherche] === valeurRecherche
-//   fetchPays(`https://restcountries.com/v3.1/region/${inputValue}`);
-//   //   fetchPays(`https://restcountries.com/v3.1/name/${inputValue}`);
-// });
 
 // _______________________________
 // Changer le theme de la page
