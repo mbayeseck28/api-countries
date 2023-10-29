@@ -135,13 +135,13 @@ function details(cle) {
     div.innerHTML = `
     <div class="container">
     <div class="row">
-      <div class="col-sm-6 mb-3 mb-sm-0">
+      <div class="col-md-6 mb-3 mb-sm-0">
           <div class="card-body drapeauDet">
               <img src="${objetTrouve.flags.png}" alt="">
           </div>
       </div>
-      <div class="col-sm-6 d-flex align-content-center align-items-center">
-          <div class="card-body py-2 ps-sm-5">
+      <div class="col-md-6 d-flex align-content-center align-items-center">
+          <div class="card-body py-2 ps-md-5">
             <h4 class="fw-semibold changeText">${objetTrouve.name.common}</h4>
             <div class="d-flex justify-content-between py-3 flex-wrap">
               <div class="">
@@ -158,10 +158,10 @@ function details(cle) {
               </div>
           </div>
           <div class="mt-4">
-            <h6 class="fw-bold">Border Countries: 
-              <span class="fw-normal px-3 py-1 shadow mx-2">${objetTrouve.borders[0]}</span>
-              <span class="fw-normal px-3 py-1 shadow mx-2">${objetTrouve.borders[1]}</span>
-              <span class="fw-normal px-3 py-1 shadow mx-2">${objetTrouve.borders[2]}</span>
+            <h6 class="fw-bold d-flex flex-wrap">Border Countries: 
+              <span class="fw-normal px-2 py-1 shadow mx-2">${objetTrouve.borders[0]}</span>
+              <span class="fw-normal px-2 py-1 shadow mx-2">${objetTrouve.borders[1]}</span>
+              <span class="fw-normal px-2 py-1 shadow mx-2">${objetTrouve.borders[2]}</span>
             </h6>
           </div>
       </div>
